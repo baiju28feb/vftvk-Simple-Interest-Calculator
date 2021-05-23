@@ -17,8 +17,8 @@ function compute()
    {
         si = (p*r*t)/100
         maturityYear = parseInt(currentYear) + parseInt(t);
-        document.getElementById("resultpara").innerHTML = "If you Deposit "+p+"</Br> At an Interest rate of "+r+
-        " %.</Br> You will receive an amount of "+ si +",</Br> in the year " +maturityYear;
+        document.getElementById("resultpara").innerHTML = "If you Deposit <span id='yellow'> "+p+"</span></Br> At an Interest rate of <span id='yellow'>"+r+
+        " %</span>.</Br> You will receive an amount of <span id='yellow'>"+ si +"</span>,</Br> in the year <span id='yellow'>" +maturityYear+"</span>";
     }  
 
 }
