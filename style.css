@@ -19,12 +19,21 @@ h1{color:gray;}
 }
 .slidecontainer
 {
-    float: right;
-    margin-right: 140px;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -20px;
 }
-.percent{
+#percent{
     float: right;
+    margin-top: 0px;
+    margin-right: 85px;
 }
 .rangeValue{
     float: right;
+    overflow: auto;
+    
+}
+#years{
+    width: 35px;
+    margin-left: 35px;
 }
