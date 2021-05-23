@@ -7,11 +7,15 @@
         <div id = "CalcCard">
         <h1>Simple Interest Calculator</h1>
             <div id = "Flilds">
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="number"  id="rate">  <br/>
-            No. of Years <input type="number"  id="years">  <br/>
-            Interest : <span id="result"></span><br>
-            <button onclick="compute()">Compute</button>
+                <label for="Amount">Amount</label> <input type="number"  id="principal">  <br/> <br/>
+                <label  for="InterestRate">Interest Rate</label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="20" value="10.5" step=".05" class="slider" id="myRange" onchange="updateTextInput(this.value);">
+                    <output name="rangeValue" id="rangeValue">10.50</output>  <p id = "percent">%</p>
+                </div> <br/><br/>
+                No. of Years <input type="number"  id="years">  <br/>
+                Interest : <span id="result"></span><br>
+                    <button onclick="compute()">Compute</button>
             </div>
         </div>
 
