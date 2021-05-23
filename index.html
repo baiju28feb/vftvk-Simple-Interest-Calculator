@@ -7,25 +7,32 @@
         <div id = "CalcCard">
         <h1>Simple Interest Calculator</h1>
             <div id = "Flilds">
-                <label for="Amount">Amount</label> <input type="number"  id="principal">  <br/> <br/>
-                <label  for="InterestRate">Interest Rate</label>
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="10" value="5" step=".05" class="slider" id="myRange" onchange="updateTextInput(this.value);">
-                    <output name="rangeValue" id="rangeValue">3.50</output>  
-                </div>
-                <p id = "percent">%</p>
-                 <br/><br/>
-                 <div id= "NoofYears">
-                    No. of Years <input type="number"  id="years" min="0" max="9" value="5"> 
-                 </div>
-                 <br/>
-                <button onclick="compute()">Compute Interest</button>
-                <div id = result>
-                    <p></p>    
-                </div>
+                <form action="#">
+                    <label for="Amount">Amount</label> <input min=0 type="number"  id="principal" required>  <br/> <br/>
+                    <label  for="InterestRate">Interest Rate</label>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="10" value="3.50" step=".05" class="slider" id="myRange" onchange="updateTextInput(this.value);">
+                        <output name="rangeValue" id="rangeValue">3.50</output>  
+                    </div>
+                    <p id = "percent">%</p>
+                    <br/><br/>
+                    <div id= "NoofYears">
+                        No. of Years <input type="number"  id="years" min="0" max="9" value="5"> 
+                    </div>
+                    <br/>
+                    <button onclick="compute();return false;">Compute Interest</button>
+                    <div id = result>
+                        <p id = "resultpara"></p>    
+                    </div>
+                </form>
             </div>
+             </br>
+             </br>
+             <div id = "footer">
+                <p>&#169 Everyone Can Get Rich</p> 
+             </div>
+             
         </div>
-
-        
+           
     </body>
 </html>
