@@ -9,10 +9,14 @@ function compute()
    var maturityYear;
    if (p == null || p == undefined || p.length == 0) {
     alert("Please enter a valid Amount \n");
+    document.getElementById("principal").focus();
     return false;
     }
     if(parseInt(p)<=0)
-    alert("Amount should be greater than zero");
+    {
+        alert("Amount should be greater than zero");
+        document.getElementById("principal").focus();
+    }
    if(p>0 && r> 0  && t>0)
    {
         si = (p*r*t)/100
